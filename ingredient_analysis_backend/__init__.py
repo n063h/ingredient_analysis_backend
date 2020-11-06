@@ -2,6 +2,9 @@ from flask import Flask
 import ingredient_analysis_backend.setting as Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import *
+import logging
+logging.basicConfig(level=logging.INFO, filename='server.log',filemode='w',format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')
+logger = logging.getLogger('log')
 
 db = SQLAlchemy()
 app = Flask(__name__)

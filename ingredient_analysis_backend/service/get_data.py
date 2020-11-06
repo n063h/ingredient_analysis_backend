@@ -1,4 +1,6 @@
 import os,re,time
+from ingredient_analysis_backend import logger
+
 def get_components(seg):
     pattern = re.compile(r'([a-zA-Z]+[0-9]+)')  # 查找数字
     components = pattern.findall(seg)
@@ -45,8 +47,8 @@ def get_data(recv_file_dir):
                                 "weaving_type":seg[-1],
                             }
                             data.append(tmp)
-    print("data",data)
-    print("data_length", len(data))
+    logger.debug(data)
+    logger.info("get_data num:"+str(len(data)))
     return data
 
 

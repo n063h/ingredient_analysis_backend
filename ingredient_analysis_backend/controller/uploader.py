@@ -1,4 +1,4 @@
-from ingredient_analysis_backend import app
+from ingredient_analysis_backend import app,logger
 import os, json
 from flask import request
 from ingredient_analysis_backend.service.get_data import get_data
@@ -7,10 +7,8 @@ from ingredient_analysis_backend.service.un7z import un7z
 from ingredient_analysis_backend.model.crud import insert_info
 from werkzeug.utils import secure_filename
 import ingredient_analysis_backend.setting as Config
-import logging
 
-logging.basicConfig(level=logging.INFO, filename='./server.log', filemode='a')
-logger = logging.getLogger('log')
+
 
 
 @app.route('/up', methods=['POST'])
@@ -42,8 +40,9 @@ def recv7z():
         logger.info(file.filename + "relocate finished")
 
     except Exception as e:
-        logger.error(file.filename + "  error:" ,e)
-        return json.dumps({"res": 'error', "error": e})
+        logger.critical("file.filename recv error")
+        #要加 ensure_ascii=False,否则error是Unicode编码
+        return json.dumps({"res": 'error', "error":str(e)},ensure_ascii=False)
     else:
         logger.info(file.filename + "proc success")
     return json.dumps({"res": 'success'})

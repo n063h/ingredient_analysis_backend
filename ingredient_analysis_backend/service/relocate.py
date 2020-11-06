@@ -1,8 +1,8 @@
 import os
 import ingredient_analysis_backend.setting as Config
-import logging
+from ingredient_analysis_backend import logger
 
-logging.basicConfig(level=logging.INFO)
+
 def relocate(root,dest):
     try:
         if not os.path.exists(Config.UN7Z_FILE_DEST):
@@ -14,7 +14,8 @@ def relocate(root,dest):
                 os.rename(frm,dst)
         os.rmdir(root)
     except Exception as e:
-        logging.ERROR("relocate error",e)
+        logger.error("relocate error")
+        raise Exception("无权限或文件已存在")
         return e
     return 1
 

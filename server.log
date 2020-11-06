@@ -1,0 +1,12 @@
+2020-11-06 13:07:33,396 - C:\ProgramData\Anaconda3\lib\site-packages\werkzeug\_internal.py[line:113] - WARNING:  * Debugger is active!
+2020-11-06 13:07:33,415 - C:\ProgramData\Anaconda3\lib\site-packages\werkzeug\_internal.py[line:113] - INFO:  * Debugger PIN: 320-669-195
+2020-11-06 13:07:33,447 - C:\ProgramData\Anaconda3\lib\site-packages\werkzeug\_internal.py[line:113] - INFO:  * Running on http://127.0.0.1:3003/ (Press CTRL+C to quit)
+2020-11-06 13:07:34,042 - C:\Users\hang's PC\PycharmProjects\ingredient_analysis_backend\ingredient_analysis_backend\controller\uploader.py[line:19] - INFO: 10-27.7z in process
+2020-11-06 13:07:34,046 - C:\Users\hang's PC\PycharmProjects\ingredient_analysis_backend\ingredient_analysis_backend\controller\uploader.py[line:26] - INFO: 10-27.7z.7z saved
+2020-11-06 13:07:36,154 - C:\Users\hang's PC\PycharmProjects\ingredient_analysis_backend\ingredient_analysis_backend\controller\uploader.py[line:31] - INFO: 10-27.7z.7z un7zed
+2020-11-06 13:07:36,169 - C:\Users\hang's PC\PycharmProjects\ingredient_analysis_backend\ingredient_analysis_backend\service\get_data.py[line:51] - INFO: get_data num:4
+2020-11-06 13:07:36,170 - C:\Users\hang's PC\PycharmProjects\ingredient_analysis_backend\ingredient_analysis_backend\controller\uploader.py[line:34] - INFO: 10-27.7zget_data success
+2020-11-06 13:07:36,308 - C:\Users\hang's PC\PycharmProjects\ingredient_analysis_backend\ingredient_analysis_backend\controller\uploader.py[line:37] - INFO: 10-27.7zcrud success
+2020-11-06 13:07:36,310 - C:\Users\hang's PC\PycharmProjects\ingredient_analysis_backend\ingredient_analysis_backend\service\relocate.py[line:17] - ERROR: relocate error
+2020-11-06 13:07:36,310 - C:\Users\hang's PC\PycharmProjects\ingredient_analysis_backend\ingredient_analysis_backend\controller\uploader.py[line:43] - CRITICAL: file.filename recv error
+2020-11-06 13:07:36,311 - C:\ProgramData\Anaconda3\lib\site-packages\werkzeug\_internal.py[line:113] - INFO: 127.0.0.1 - - [06/Nov/2020 13:07:36] "[37mPOST /up HTTP/1.1[0m" 200 -
