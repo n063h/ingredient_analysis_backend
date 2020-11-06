@@ -8,6 +8,6 @@
 *.xml
 *.out
 
-.log
-/7z/
-/data/
+*.log
+./7z/
+./data/

@@ -1,0 +1,3 @@
+2020-11-06 13:33:06,149 - C:\ProgramData\Anaconda3\lib\site-packages\werkzeug\_internal.py[line:113] - WARNING:  * Debugger is active!
+2020-11-06 13:33:06,176 - C:\ProgramData\Anaconda3\lib\site-packages\werkzeug\_internal.py[line:113] - INFO:  * Debugger PIN: 320-669-195
+2020-11-06 13:33:06,260 - C:\ProgramData\Anaconda3\lib\site-packages\werkzeug\_internal.py[line:113] - INFO:  * Running on http://127.0.0.1:3003/ (Press CTRL+C to quit)
