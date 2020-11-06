@@ -1,0 +1,13 @@
+.idea
+*.pyc
+*.jpg
+*.png
+*.bmp
+*.gif
+*.iml
+*.xml
+*.out
+
+.log
+/7z/
+/data/
